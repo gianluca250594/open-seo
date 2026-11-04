@@ -7,7 +7,7 @@ x-app: &app
   # Portainer or Dokploy on its own.
   image: ${OPENSEO_IMAGE:-rebraindz-open-seo:custom}
   build:
-    context: ../..
+    context: .
     dockerfile: deploy/standalone/Dockerfile
   pull_policy: build
 x-storage: &storage
