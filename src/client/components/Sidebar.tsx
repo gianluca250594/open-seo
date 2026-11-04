@@ -295,12 +295,13 @@ function AccountFooter({ ready }: { ready: boolean }) {
           <SidebarMenuItem>
             <DropdownMenu>
               <DropdownMenuTrigger
-                render={
-                  <SidebarMenuButton
-                    className={navButtonClass}
-                    aria-label="Open account menu"
-                  />
-                }
+                type="button"
+                aria-label="Open account menu"
+                className={cn(
+                  "flex h-8 w-full cursor-pointer items-center gap-2 rounded-md px-2 text-left text-sm",
+                  "text-sidebar-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sidebar-ring",
+                  navButtonClass,
+                )}
               >
                 <User className="size-4" />
                 <span className="truncate" data-ph-mask>
