@@ -153,9 +153,11 @@ export function Sidebar({
         <Link
           to="/"
           onClick={() => setOpenMobile(false)}
-          className="px-1 pb-2 text-base font-semibold text-sidebar-foreground"
+          className="inline-flex items-center gap-2 rounded-md px-1 pb-2 text-base font-semibold text-sidebar-foreground"
         >
-          OpenSEO
+          <img src="/rebraindz-icon.svg" alt="" width={25} height={25} className="size-6 shrink-0" />
+          <span>Rebraindz <span className="font-medium opacity-70">SEO</span></span>
+          <span aria-hidden="true" className="ml-0.5 size-1.5 shrink-0 rounded-full bg-[var(--brand-accent)]" />
         </Link>
         <ProjectSwitcher
           activeProjectId={projectId}
@@ -293,12 +295,13 @@ function AccountFooter({ ready }: { ready: boolean }) {
           <SidebarMenuItem>
             <DropdownMenu>
               <DropdownMenuTrigger
-                render={
-                  <SidebarMenuButton
-                    className={navButtonClass}
-                    aria-label="Open account menu"
-                  />
-                }
+                type="button"
+                aria-label="Open account menu"
+                className={cn(
+                  "flex h-8 w-full cursor-pointer items-center gap-2 rounded-md px-2 text-left text-sm",
+                  "text-sidebar-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sidebar-ring",
+                  navButtonClass,
+                )}
               >
                 <User className="size-4" />
                 <span className="truncate" data-ph-mask>

@@ -147,8 +147,8 @@ export function AuthPageCard({
     <div className="w-full max-w-xs space-y-6">
       <div className="space-y-3 text-center">
         <img
-          src="/transparent-logo.png"
-          alt="OpenSEO"
+          src="/rebraindz-icon.svg"
+          alt="Rebraindz SEO"
           className="mx-auto size-10 rounded-lg"
         />
         <div>

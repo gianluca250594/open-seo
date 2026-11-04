@@ -37,11 +37,11 @@ function DataforseoApiKeyHelpPage() {
       title="Set up your DataForSEO API key"
       intro={
         <>
-          OpenSEO needs the <code>DATAFORSEO_API_KEY</code> secret before
+          Rebraindz SEO needs the <code>DATAFORSEO_API_KEY</code> secret before
           keyword, domain, and SEO data workflows can run.
         </>
       }
-      everyAppIntro="OpenSEO's keyword, domain, backlink and rank data comes from DataForSEO. On Every App the gateway holds the key once, for every app."
+      everyAppIntro="Rebraindz SEO's keyword, domain, backlink and rank data comes from DataForSEO. On Every App the gateway holds the key once, for every app."
       secretName="DATAFORSEO_API_KEY"
       steps={
         <>
@@ -62,7 +62,7 @@ function DataforseoApiKeyHelpPage() {
             the value:
             <CommandBlock command="pnpm everyapp secret set DATAFORSEO_API_KEY" />
           </li>
-          <li>Reload OpenSEO: it uses the key on its next request.</li>
+          <li>Reload Rebraindz SEO: it uses the key on its next request.</li>
         </>
       }
       dashboardPasteStep="Paste the base64 value from the terminal command above and save."

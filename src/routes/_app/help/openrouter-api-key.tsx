@@ -45,9 +45,9 @@ function OpenrouterApiKeyHelpPage() {
       title="Set up your OpenRouter API key"
       intro={
         <>
-          OpenSEO needs the <code>OPENROUTER_API_KEY</code> secret before AI
+          Rebraindz SEO needs the <code>OPENROUTER_API_KEY</code> secret before AI
           features like SAM, the in-app SEO agent, can run. It is optional —
-          everything else in OpenSEO works without it.
+          everything else in Rebraindz SEO works without it.
         </>
       }
       everyAppIntro="SAM, prompt suggestions and website research run on OpenRouter. On Every App the gateway holds the key once, for every app."
@@ -69,7 +69,7 @@ function OpenrouterApiKeyHelpPage() {
               </li>
             </ul>
           </li>
-          <li>Restart OpenSEO.</li>
+          <li>Restart Rebraindz SEO.</li>
         </>
       }
       everyAppSteps={
@@ -81,7 +81,7 @@ function OpenrouterApiKeyHelpPage() {
             the key:
             <CommandBlock command="pnpm everyapp secret set OPENROUTER_API_KEY" />
           </li>
-          <li>Reload OpenSEO.</li>
+          <li>Reload Rebraindz SEO.</li>
         </>
       }
       dashboardPasteStep="Paste your OpenRouter API key and save."

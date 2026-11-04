@@ -18,7 +18,7 @@ export function DashboardAgentCard({ projectId }: { projectId: string }) {
     <AgentCard
       projectId={projectId}
       icons={ONE_CLICK_INSTALLS.map(({ Icon }) => Icon)}
-      title="Use OpenSEO in ChatGPT or Claude"
+      title="Connect an SEO agent: ChatGPT or Claude"
       description="Research keywords and audit your site from the chatbot you already use."
     >
       {ONE_CLICK_INSTALLS.map(({ agent, name, href, Icon }) => (

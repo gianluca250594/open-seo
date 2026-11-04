@@ -26,8 +26,8 @@ function SupportPage() {
             Help & Community
           </p>
           <PageHeader
-            title="We want to hear from you"
-            description="We want to talk to you! We're super open to feedback and want to learn how you work so we can make OpenSEO better."
+            title="Help and resources"
+            description="Resources for this Rebraindz SEO installation. The community and support links below belong to the original Open SEO project."
           />
         </div>
 
@@ -35,10 +35,10 @@ function SupportPage() {
           <Card>
             <CardHeader>
               <CardTitle>
-                <h2>Email</h2>
+                <h2>Original project support</h2>
               </CardTitle>
               <CardDescription>
-                Send ideas, problems, questions, or feedback directly.
+                This email belongs to the original Open SEO maintainers, not Rebraindz.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -53,14 +53,14 @@ function SupportPage() {
 
           <SupportLinkCard
             href={DISCORD_URL}
-            title="Discord"
+            title="Original project Discord"
             description="Ask for help, share ideas and learn from the community."
             cta="Join the Discord"
           />
 
           <SupportLinkCard
             href={`${GITHUB_URL}/issues`}
-            title="GitHub Issues"
+            title="Original project GitHub Issues"
             description="Report bugs or request features on GitHub."
             cta="Open an issue"
           />
